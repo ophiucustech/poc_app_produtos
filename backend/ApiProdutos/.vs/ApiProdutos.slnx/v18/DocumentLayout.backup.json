@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|c:\\users\\ophiu\\desktop\\prova\\poc_app_produtos\\backend\\apiprodutos\\apiprodutos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|solutionrelative:apiprodutos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|c:\\users\\ophiu\\desktop\\prova\\poc_app_produtos\\backend\\apiprodutos\\apiprodutos\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|solutionrelative:apiprodutos\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|c:\\users\\ophiu\\desktop\\prova\\poc_app_produtos\\backend\\apiprodutos\\apiprodutos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{954F25D7-D198-1BC3-79F1-AF96026E61D9}|ApiProdutos\\ApiProdutos.csproj|solutionrelative:apiprodutos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "ApiProdutos\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Models\\Produto.cs",
+              "RelativeToolTip": "ApiProdutos\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T20:06:43.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "ApiProdutos\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "ApiProdutos\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T20:03:35.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Program.cs",
+              "RelativeDocumentMoniker": "ApiProdutos\\Program.cs",
+              "ToolTip": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\Program.cs",
+              "RelativeToolTip": "ApiProdutos\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T19:03:55.076Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

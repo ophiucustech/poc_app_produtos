@@ -1,0 +1,71 @@
+<div class="" role="main">
+
+    <h1>Distribuidora de Bebidas Santa Monica</h1>
+    <h3>Lista de Produtos</h3>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+        <div class="col">
+            <input type="text" [(ngModel)]="searchTerm" id="searchInput" class="input"
+                placeholder="Digite o nome do produto a ser pesquisado" />
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" (click)="buscarProdutos()">Pesquisar</button>
+            <button class="btn btn-success" (click)="acaoEditar(0, template)" >Adicionar Produto</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">Nome</th>
+                <th class="text-center">Preço</th>
+                <th class="text-center">Quantidade</th>
+                <th class="text-center">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <td class="text-center">{{ produto.id }}</td>
+                <td class="text-center">{{ produto.nome }}</td>
+                <td class="text-center">{{ produto.preco | currency:'BRL' }}</td>
+                <td class="text-center">{{ produto.quantidade }}</td>
+                <td class="text-center"><button class="btn btn-secondary" (click)="acaoEditar(produto.id, template)"> Editar</button> 
+                    <button class="btn btn-danger"    (click)="acaoExcluir(produto.id)">Excluir</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <ng-template #template>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Cadastro de Produtos</h4>
+            <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome do Produto</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto" [(ngModel)]="produtoEditar.nome" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto" [(ngModel)]="produtoEditar.preco" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade" placeholder="Digite a quantidade do produto" [(ngModel)]="produtoEditar.quantidade" [ngModelOptions]="{standalone: true}">
+                </div>
+            </form>
+            
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button class="btn btn-secondary" (click)="modalRef?.hide()">Fechar</button>
+        </div>
+    </ng-template>
+
+</div>
