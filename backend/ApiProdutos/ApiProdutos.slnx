@@ -1,3 +1,19 @@
 <Solution>
-  <Project Path="ApiProdutos/ApiProdutos.csproj" />
+  <Folder Name="/Application/">
+    <Project Path="ApiProdutos.Application/ApiProdutos.Application.csproj" Id="abbbb053-33f6-4503-96c8-d09f915dc1b3" />
+  </Folder>
+  <Folder Name="/CrossCutting/">
+    <Project Path="ApiProdutos.CrossCutting.IoC/ApiProdutos.CrossCutting.IoC.csproj" Id="b874eb20-53d4-4296-a47d-6e6d46ee2b80" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="ApiProdutos.Domain/ApiProdutos.Domain.csproj" Id="bff3e5c4-2d93-4c15-9a18-51ac9162b190" />
+  </Folder>
+  <Folder Name="/Infra/" />
+  <Folder Name="/Infra/Data/">
+    <Project Path="ApiProdutos.Infra.Data/ApiProdutos.Infra.Data.csproj" Id="b21d71ef-ad2c-4dbc-a200-1e63b64ff8bb" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="ApiProdutos.Auth/ApiProdutos.Auth.csproj" Id="f58dddbc-79f9-419a-add4-8501ef79c55d" />
+    <Project Path="ApiProdutos/ApiProdutos.csproj" />
+  </Folder>
 </Solution>

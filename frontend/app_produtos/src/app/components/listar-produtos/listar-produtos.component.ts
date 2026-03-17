@@ -1,6 +1,11 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { error } from 'console';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ProdutosService } from 'src/app/services/produtos.service';
+
+type MessageAlertType = { type: string; msg: string; timeout: number };
+
 
 @Component({
   selector: 'app-listar-produtos',
@@ -11,22 +16,80 @@ export class ListarProdutosComponent implements OnInit {
   produtos: { id: number; nome: string; preco: number; quantidade: number; }[] = [];
   modalRef?: BsModalRef;
   produtoEditar: any;
+  form: FormGroup = new FormGroup({});
+  alert: MessageAlertType | undefined;
   constructor(private modalService: BsModalService, private produtosService: ProdutosService) {
 
   }
 
   ngOnInit(): void {
-    this.produtos = this.listarTodosProdutos();
-
+    this.listarTodosProdutos();
+    this.initForm();
+   
   }
   searchTerm: string = '';
-
-  listarTodosProdutos() {
-    const data = this.produtosService.buscarProdutos();
-    return this.produtos;
-       
+  initForm() {
+    this.form = new FormBuilder().group({
+      id: [0,],
+      nome: ['', Validators.required],
+      preco: [0, [Validators.required, Validators.min(1)]],
+      quantidade: [0, [Validators.required, Validators.min(1)]]
+    });
   }
+  listarTodosProdutos() {
+    this.produtosService.buscarProdutos().subscribe((data: any) => {
+      this.produtos = data;
+    });
 
+  }
+  acaoIncluir() {
+    debugger
+    this.form.markAllAsTouched();
+    if (this.form.invalid) {
+      return;
+    }
+    const produto = this.form.value;
+    if (produto.id === 0) {
+      this.produtosService.salvarProduto(produto).subscribe(() => {
+        this.alert = {
+          type: 'success',
+          msg: `Produto incluído com sucesso!`,
+          timeout: 5000
+        }
+        this.listarTodosProdutos();
+        this.modalRef?.hide();
+      }, error => {
+        this.alert = {
+          type: 'danger',
+          msg: `Erro ao incluir o produto!`,
+          timeout: 5000
+        }
+        this.modalRef?.hide();
+      });
+    } else {
+      this.produtosService.editarProduto(produto.id, produto).subscribe(() => {
+        this.alert = {
+          type: 'success',
+          msg: `Produto editado com sucesso!`,
+          timeout: 5000
+        };
+        this.listarTodosProdutos();
+        this.modalRef?.hide();
+      },error=> {
+        this.alert = {
+          type: 'danger',
+          msg: `Erro ao editar o produto!`,
+          timeout: 5000
+        };
+        this.modalRef?.hide();
+
+      });
+    }
+    this.form.valid;
+  }
+  onClosed(): void {
+    this.alert = undefined;
+  }
   acaoExcluir(id: number) {
     const result = confirm("Tem certeza que deseja excluir o produto com ID " + id + "?");
 
@@ -38,22 +101,35 @@ export class ListarProdutosComponent implements OnInit {
     }
   }
   acaoEditar(id: number, template: TemplateRef<any>) {
-    if( id === 0){
+    debugger
+    this.initForm();
+    if (id === 0) {
       this.produtoEditar = { id: 0, nome: '', preco: 0, quantidade: 0 };
       this.openModal(template);
       return;
     }
-    
+
     this.produtoEditar = this.produtos.find(p => p.id === id);
 
     if (!this.produtoEditar) {
       alert("Produto com ID " + id + " não encontrado.");
       return;
     }
+    this.form = new FormBuilder().group({
+      id: [this.produtoEditar.id],
+      nome: [this.produtoEditar.nome, Validators.required],
+      preco: [this.produtoEditar.preco, [Validators.required, Validators.min(1)]],
+      quantidade: [this.produtoEditar.quantidade, [Validators.required, Validators.min(1)]]
+    });
     this.openModal(template);
   }
   buscarProdutos() {
-    this.produtos = this.listarTodosProdutos().filter(produto =>
+    if (!this.searchTerm || this.searchTerm.trim() === '') {
+      this.produtosService.buscarProdutos().subscribe((data: any) => {
+        this.produtos = data;
+      });
+    }
+    this.produtos = this.produtos.filter(produto =>
       produto.nome.toLowerCase().includes(this.searchTerm.toLowerCase())
     );
 

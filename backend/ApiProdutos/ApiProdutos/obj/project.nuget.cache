@@ -1,11 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "GrY0TUi2NRA=",
+  "dgSpecHash": "5F3lCPYvDRI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ophiu\\Desktop\\prova\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
+  "projectFilePath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ophiu\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.4\\microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",
-    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.5\\microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.5\\microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.5\\microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\10.0.5\\microsoft.entityframeworkcore.inmemory.10.0.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\swashbuckle.aspnetcore\\10.1.5\\swashbuckle.aspnetcore.10.1.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.5\\swashbuckle.aspnetcore.swagger.10.1.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.5\\swashbuckle.aspnetcore.swaggergen.10.1.5.nupkg.sha512",
+    "C:\\Users\\ophiu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.5\\swashbuckle.aspnetcore.swaggerui.10.1.5.nupkg.sha512"
   ],
   "logs": []
 }

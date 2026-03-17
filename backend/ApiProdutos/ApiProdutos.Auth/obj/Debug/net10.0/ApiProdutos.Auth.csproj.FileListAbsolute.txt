@@ -1,0 +1,9 @@
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.csproj.AssemblyReference.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.AssemblyInfoInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.AssemblyInfo.cs
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.csproj.CoreCompileInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Auth\obj\Debug\net10.0\ApiProdutos.Auth.sourcelink.json

@@ -1,4 +1,5 @@
-﻿using ApiProdutos.Models;
+﻿using ApiProdutos.Domain.Abstractions.Services;
+using ApiProdutos.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,17 +10,21 @@ namespace ApiProdutos.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
+        private readonly IProdutoService produtoService;
+
+        public ProdutosController(IProdutoService produtoService)
+        {
+            this.produtoService = produtoService;
+        }
+
+
         // GET: api/<ProdutosController>
         [HttpGet]
-        public IEnumerable<Produto> Get()
+        public async Task<IEnumerable<Produto>> Get()
         {
-            List<Produto> produtos = new List<Produto>();
-            produtos.Add(new Produto(1, "Cerveja", 10, 250));
-            produtos.Add(new Produto(2, "Suco", 5, 20));
-            produtos.Add(new Produto(3, "Agua Tonica", 3, 100));
-            produtos.Add(new Produto(4, "Agua Mineral", 3, 40));
+           
 
-            return produtos;
+            return await produtoService.GetAllAsync();
 
 
 
@@ -34,14 +39,17 @@ namespace ApiProdutos.Controllers
 
         // POST api/<ProdutosController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task Post([FromBody] Produto value)
         {
+            await this.produtoService.CreateAsync(value);
         }
 
         // PUT api/<ProdutosController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task Put(int id, [FromBody] Produto value)
         {
+            await this.produtoService.UpdateAsync(value);
+
         }
 
         // DELETE api/<ProdutosController>/5

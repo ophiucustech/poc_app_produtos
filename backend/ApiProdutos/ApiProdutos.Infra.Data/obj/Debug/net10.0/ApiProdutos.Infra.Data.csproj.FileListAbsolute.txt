@@ -1,0 +1,16 @@
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\bin\Debug\net10.0\ApiProdutos.Infra.Data.deps.json
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\bin\Debug\net10.0\ApiProdutos.Infra.Data.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\bin\Debug\net10.0\ApiProdutos.Infra.Data.pdb
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\bin\Debug\net10.0\ApiProdutos.Domain.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\bin\Debug\net10.0\ApiProdutos.Domain.pdb
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.AssemblyInfo.cs
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.sourcelink.json
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdu.E89CA7AB.Up2Date
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\refint\ApiProdutos.Infra.Data.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ApiProdutos.Infra.Data.pdb
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Infra.Data\obj\Debug\net10.0\ref\ApiProdutos.Infra.Data.dll

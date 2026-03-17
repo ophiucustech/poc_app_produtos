@@ -58,17 +58,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             }
           },
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Produto"
               }
             }
           },
@@ -200,25 +200,14 @@
     "schemas": {
       "Produto": {
         "required": [
+          "preco",
+          "quantidade",
           "id",
-          "nome",
-          "valor",
-          "quantidade"
+          "nome"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
-          },
-          "nome": {
-            "type": "string"
-          },
-          "valor": {
+          "preco": {
             "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
             "type": [
               "number",
@@ -233,6 +222,17 @@
               "string"
             ],
             "format": "int32"
+          },
+          "id": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string"
           }
         }
       }

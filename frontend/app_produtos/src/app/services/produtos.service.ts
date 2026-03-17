@@ -11,9 +11,7 @@ export class ProdutosService {
 
 
   buscarProdutos() {
-    return this.http.get(this.urlBase).subscribe((data: any) => {
-      return data;
-    });
+    return this.http.get(this.urlBase);
   }
 
   excluirProduto(id: number) {

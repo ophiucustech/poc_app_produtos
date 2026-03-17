@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListarProdutosComponent } from './components/listar-produtos/listar-produtos.component';
-import { CriarEditarProdutosComponent } from './components/criar-editar-produtos/criar-editar-produtos.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { HttpClientModule } from '@angular/common/http';
+import { AlertModule } from 'ngx-bootstrap/alert';
+
 @NgModule({
   declarations: [
     AppComponent,
     ListarProdutosComponent,
-    CriarEditarProdutosComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

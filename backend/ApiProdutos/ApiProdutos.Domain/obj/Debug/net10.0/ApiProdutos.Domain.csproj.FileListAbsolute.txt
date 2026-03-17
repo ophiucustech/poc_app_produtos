@@ -1,0 +1,13 @@
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\bin\Debug\net10.0\ApiProdutos.Domain.deps.json
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\bin\Debug\net10.0\ApiProdutos.Domain.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\bin\Debug\net10.0\ApiProdutos.Domain.pdb
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.csproj.AssemblyReference.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.AssemblyInfoInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.AssemblyInfo.cs
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.sourcelink.json
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\refint\ApiProdutos.Domain.dll
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ApiProdutos.Domain.pdb
+C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Domain\obj\Debug\net10.0\ref\ApiProdutos.Domain.dll

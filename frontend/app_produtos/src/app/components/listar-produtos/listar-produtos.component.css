@@ -4,9 +4,47 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  color: #996a44;
 }
 
 button {
   margin-right: 10px;
 }
 
+
+.subtitulo {
+  margin-bottom: 10px;
+  color: #f1f1f1;
+
+}
+.main-content{
+  margin: 20px;
+}
+.btn-principal {
+  background-color: #394367;
+  color: #c1c1c1;
+  border: 1px solid #394367;
+}
+.btn-secundario {
+  background-color: #996a44;
+  color: #c1c1c1;
+  border: 1px solid 	#996a44;
+}
+
+.txt-pesquisar{
+ margin: 50px 0 20px 0; 
+}
+.table tr:first 
+{
+  font-size: 18px;
+}
+.table th {
+  color:#996a44;
+}
+.table td {
+  color:#c1c1c1;
+}
+.validation-errors {
+  color: red;
+  margin-bottom: 10px;
+}
