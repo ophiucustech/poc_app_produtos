@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5F3lCPYvDRI=",
+  "dgSpecHash": "vTVaP2+n8Eg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
+  "projectFilePath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ophiu\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.4\\microsoft.aspnetcore.openapi.10.0.4.nupkg.sha512",

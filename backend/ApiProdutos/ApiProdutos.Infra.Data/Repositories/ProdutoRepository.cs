@@ -34,7 +34,7 @@ namespace ApiProdutos.Infra.Data.Repositories
 
         public async Task<IEnumerable<Produto>> GetAllAsync()
         {
-            return await this.context.Produtos.AsNoTracking().ToListAsync();
+            return await this.context.Produtos.OrderBy(o=> o.Id).AsNoTracking().ToListAsync();
         }
 
         public async Task<Produto> GetAsync(int id)

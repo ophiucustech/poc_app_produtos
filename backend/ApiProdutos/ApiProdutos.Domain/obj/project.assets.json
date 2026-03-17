@@ -615,11 +615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj",
       "projectName": "ApiProdutos.Domain",
-      "projectPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj",
+      "projectPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj",
       "packagesPath": "C:\\Users\\ophiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\obj\\",
+      "outputPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

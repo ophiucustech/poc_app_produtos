@@ -1,107 +1,135 @@
 <div class="main-content" role="main">
 
-        <div *ngIf="alert">
-            <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosed()">{{ alert.msg }}
-            </alert>
+    <div *ngIf="alert">
+        <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosed()">{{ alert.msg }}
+        </alert>
+    </div>
+    <div class="spacer"></div>
+
+    <div class="row txt-pesquisar pull-left" data-bs-theme="dark">
+        <div class="col ">
+            <input type="text" [(ngModel)]="searchTerm" id="searchInput" class="input"
+                placeholder="Digite o nome do produto a ser pesquisado" />
         </div>
-        <div class="spacer"></div>
-
-        <div class="row txt-pesquisar pull-left" data-bs-theme="dark">
-            <div class="col ">
-                <input type="text" [(ngModel)]="searchTerm" id="searchInput" class="input"
-                    placeholder="Digite o nome do produto a ser pesquisado" />
-            </div>
-            <div class="col">
-                <button class="btn btn-primary btn-principal" (click)="buscarProdutos()">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                        <path
-                            d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
-                        </path>
-                    </svg>
-                </button>
-                <button class="btn btn-success btn-secundario" (click)="acaoEditar(0, template)">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                        <path
-                            d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z">
-                        </path>
-                    </svg>
-                </button>
-            </div>
+        <div class="col">
+            <button class="btn btn-primary btn-principal" (click)="buscarProdutos()">
+                Pesquisar
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50">
+                    <path
+                        d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                    </path>
+                </svg>
+            </button>
+            <button class="btn btn-secondary btn-secundario" (click)="limparPesquisa()">
+                Limpar
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                    </path>
+                </svg>
+            </button>
+            <button class="btn btn-success btn-secundario" (click)="acaoEditar(0, template)">
+                Novo produto
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 50 50">
+                    <path
+                        d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 24 13 L 24 24 L 13 24 L 13 26 L 24 26 L 24 37 L 26 37 L 26 26 L 37 26 L 37 24 L 26 24 L 26 13 L 24 13 z">
+                    </path>
+                </svg>
+            </button>
         </div>
-        <table class="table" data-bs-theme="dark">
-            <thead>
-                <tr>
-                    <th colspan="5" class="text-center">Lista de Produtos</th>
-                </tr>
-                <tr>
-                    <th class="text-center">ID</th>
-                    <th class="text-center">Nome</th>
-                    <th class="text-center">Preço</th>
-                    <th class="text-center">Quantidade</th>
-                    <th class="text-center">Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let produto of produtos">
-                    <td class="text-center">{{ produto.id }}</td>
-                    <td class="text-center">{{ produto.nome }}</td>
-                    <td class="text-center">{{ produto.preco | currency:'BRL' }}</td>
-                    <td class="text-center">{{ produto.quantidade }}</td>
-                    <td class="text-center"><button class="btn btn-secondary btn-principal"
-                            (click)="acaoEditar(produto.id, template)"> Editar</button>
-                        <button class="btn btn-danger btn-secundario" (click)="acaoExcluir(produto.id)">Excluir</button>
-                    </td>
-                </tr>
-            </tbody>
+    </div>
+    <table class="table" data-bs-theme="dark">
+        <thead>
+            <tr>
+                <th colspan="5" class="text-center">Lista de Produtos</th>
+            </tr>
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">Nome</th>
+                <th class="text-center">Preço</th>
+                <th class="text-center">Quantidade</th>
+                <th class="text-center">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let produto of produtos">
+                <td class="text-center">{{ produto.id }}</td>
+                <td class="text-center">{{ produto.nome }}</td>
+                <td class="text-center">{{ produto.preco | currency:'BRL' }}</td>
+                <td class="text-center">{{ produto.quantidade }}</td>
+                <td class="text-center"><button class="btn btn-secondary btn-principal"
+                        (click)="acaoEditar(produto.id, template)"> Editar</button>
+                    <button class="btn btn-danger btn-secundario" (click)="confirmarExclusao(produto.id, deleteTmp)">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-center" *ngIf="produtos.length === 0">Nenhum produto encontrado.</td>
+            </tr>
+        </tbody>
 
-        </table>
+    </table>
 
-        <ng-template #template>
-            <div class="modal-header">
-                <h4 class="modal-title pull-left">Cadastro de Produtos</h4>
-                <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form [formGroup]="form" (ngSubmit)="acaoIncluir()">
-                <div class="modal-body">
+    <ng-template #template>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Cadastro de Produtos</h4>
+            <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="acaoIncluir()">
+            <div class="modal-body">
 
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome do Produto</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto"
-                            formControlName="nome">
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="preco" class="form-label">Preço</label>
-                        <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto"
-                            formControlName="preco">
-                    </div>
-                    <div class="mb-3">
-                        <label for="quantidade" class="form-label">Quantidade</label>
-                        <input type="number" class="form-control" id="quantidade"
-                            placeholder="Digite a quantidade do produto" formControlName="quantidade">
-
-                    </div>
-
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome do Produto</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto"
+                        formControlName="nome">
 
                 </div>
-                <div class="modal-footer">
-                    <div class="validation-errors" *ngIf=" form.get('nome')?.touched">
-                        <div *ngIf="form.get('nome')?.errors?.['required']">
-                            Nome é obrigatório.
-                        </div>
-                        <div *ngIf="form.get('preco')?.errors?.['min']">
-                            Preço deve ser um valor positivo.
-                        </div>
-                        <div *ngIf="form.get('quantidade')?.errors?.['min']">
-                            Quantidade deve ser um valor positivo.
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-principal">Salvar</button>
-                    <button class="btn btn-secondary btn-secundario" (click)="modalRef?.hide()">Fechar</button>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto"
+                        formControlName="preco">
                 </div>
-            </form>
-        </ng-template>
+                <div class="mb-3">
+                    <label for="quantidade" class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade"
+                        placeholder="Digite a quantidade do produto" formControlName="quantidade">
+
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <div class="validation-errors" *ngIf=" form.get('nome')?.touched">
+                    <div *ngIf="form.get('nome')?.errors?.['required']">
+                        Nome é obrigatório.
+                    </div>
+                    <div *ngIf="form.get('preco')?.errors?.['min']">
+                        Preço deve ser um valor positivo.
+                    </div>
+                    <div *ngIf="form.get('quantidade')?.errors?.['min']">
+                        Quantidade deve ser um valor positivo.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-principal">Salvar</button>
+                <button class="btn btn-secondary btn-secundario" (click)="modalRef?.hide()">Fechar</button>
+            </div>
+        </form>
+    </ng-template>
+    <ng-template #deleteTmp>
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Cadastro de Produtos</h4>
+            <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir o produto <strong>{{produtoEditar?.nome}}</strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary btn-principal" (click)="acaoExcluir(produtoEditar.id)">Excluir</button>
+                <button class="btn btn-secondary btn-secundario" (click)="modalRef?.hide()">Fechar</button>
+            </div>
+    </ng-template>
 
 </div>

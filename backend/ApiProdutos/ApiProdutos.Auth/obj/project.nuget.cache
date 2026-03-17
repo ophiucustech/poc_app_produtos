@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TSgzIF9PuqU=",
+  "dgSpecHash": "3mgXlzEOUv4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Auth\\ApiProdutos.Auth.csproj",
+  "projectFilePath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Auth\\ApiProdutos.Auth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ophiu\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\ophiu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.5\\microsoft.aspnetcore.authentication.jwtbearer.10.0.5.nupkg.sha512",

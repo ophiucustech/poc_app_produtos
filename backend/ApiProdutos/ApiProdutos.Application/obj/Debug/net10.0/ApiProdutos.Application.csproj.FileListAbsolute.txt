@@ -14,3 +14,19 @@ C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdu
 C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\refint\ApiProdutos.Application.dll
 C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.pdb
 C:\Users\ophiu\OneDrive\Documentos\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ref\ApiProdutos.Application.dll
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\bin\Debug\net10.0\ApiProdutos.Application.deps.json
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\bin\Debug\net10.0\ApiProdutos.Application.dll
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\bin\Debug\net10.0\ApiProdutos.Application.pdb
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\bin\Debug\net10.0\ApiProdutos.Domain.dll
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\bin\Debug\net10.0\ApiProdutos.Domain.pdb
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.csproj.AssemblyReference.cache
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.AssemblyInfoInputs.cache
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.AssemblyInfo.cs
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.csproj.CoreCompileInputs.cache
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.sourcelink.json
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdu.46B46AAD.Up2Date
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.dll
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\refint\ApiProdutos.Application.dll
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ApiProdutos.Application.pdb
+C:\Users\ophiu\Desktop\poc do github\poc_app_produtos\backend\ApiProdutos\ApiProdutos.Application\obj\Debug\net10.0\ref\ApiProdutos.Application.dll

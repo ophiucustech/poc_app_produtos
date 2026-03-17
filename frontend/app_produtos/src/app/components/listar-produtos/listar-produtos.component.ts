@@ -25,7 +25,7 @@ export class ListarProdutosComponent implements OnInit {
   ngOnInit(): void {
     this.listarTodosProdutos();
     this.initForm();
-   
+
   }
   searchTerm: string = '';
   initForm() {
@@ -75,7 +75,7 @@ export class ListarProdutosComponent implements OnInit {
         };
         this.listarTodosProdutos();
         this.modalRef?.hide();
-      },error=> {
+      }, error => {
         this.alert = {
           type: 'danger',
           msg: `Erro ao editar o produto!`,
@@ -90,15 +90,30 @@ export class ListarProdutosComponent implements OnInit {
   onClosed(): void {
     this.alert = undefined;
   }
+  confirmarExclusao(id: number, template: TemplateRef<any>) {
+    this.produtoEditar = this.produtos.find(p => p.id === id);
+    this.openModal(template);
+  }
   acaoExcluir(id: number) {
-    const result = confirm("Tem certeza que deseja excluir o produto com ID " + id + "?");
 
-    if (result === true) {
-      alert("Produto com ID " + id + " excluído com sucesso!");
-    }
-    else {
-      alert("Exclusão do produto com ID " + id + " cancelada.");
-    }
+    this.produtosService.excluirProduto(id).subscribe(() => {
+      this.alert = {
+        type: 'success',
+        msg: `Produto excluído com sucesso!`,
+        timeout: 5000
+      }
+      this.modalRef?.hide();
+
+      this.listarTodosProdutos();
+    }, error => {
+      this.alert = {
+        type: 'danger',
+        msg: `Erro ao excluir o produto!`,
+        timeout: 5000
+      }
+      this.modalRef?.hide();
+
+    });
   }
   acaoEditar(id: number, template: TemplateRef<any>) {
     debugger
@@ -112,7 +127,6 @@ export class ListarProdutosComponent implements OnInit {
     this.produtoEditar = this.produtos.find(p => p.id === id);
 
     if (!this.produtoEditar) {
-      alert("Produto com ID " + id + " não encontrado.");
       return;
     }
     this.form = new FormBuilder().group({
@@ -123,11 +137,17 @@ export class ListarProdutosComponent implements OnInit {
     });
     this.openModal(template);
   }
+  limparPesquisa() {
+    this.searchTerm = '';
+    this.buscarProdutos();
+  }
   buscarProdutos() {
+    debugger
     if (!this.searchTerm || this.searchTerm.trim() === '') {
       this.produtosService.buscarProdutos().subscribe((data: any) => {
         this.produtos = data;
       });
+      return;
     }
     this.produtos = this.produtos.filter(produto =>
       produto.nome.toLowerCase().includes(this.searchTerm.toLowerCase())

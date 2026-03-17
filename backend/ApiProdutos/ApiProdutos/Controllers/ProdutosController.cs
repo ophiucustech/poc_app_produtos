@@ -54,8 +54,9 @@ namespace ApiProdutos.Controllers
 
         // DELETE api/<ProdutosController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
+            await produtoService.DeleteAsync(id);
         }
     }
 }

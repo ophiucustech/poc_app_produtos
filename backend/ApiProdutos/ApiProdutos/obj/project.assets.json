@@ -723,11 +723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
+      "projectUniqueName": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
       "projectName": "ApiProdutos",
-      "projectPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
+      "projectPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\ApiProdutos.csproj",
       "packagesPath": "C:\\Users\\ophiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\obj\\",
+      "outputPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -748,11 +748,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.CrossCutting.IoC\\ApiProdutos.CrossCutting.IoC.csproj": {
-              "projectPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.CrossCutting.IoC\\ApiProdutos.CrossCutting.IoC.csproj"
+            "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.CrossCutting.IoC\\ApiProdutos.CrossCutting.IoC.csproj": {
+              "projectPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.CrossCutting.IoC\\ApiProdutos.CrossCutting.IoC.csproj"
             },
-            "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj": {
-              "projectPath": "C:\\Users\\ophiu\\OneDrive\\Documentos\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj"
+            "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj": {
+              "projectPath": "C:\\Users\\ophiu\\Desktop\\poc do github\\poc_app_produtos\\backend\\ApiProdutos\\ApiProdutos.Domain\\ApiProdutos.Domain.csproj"
             }
           }
         }
